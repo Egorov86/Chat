@@ -74,12 +74,12 @@ namespace ChatClient
             Application.Exit(); // Закрываем приложение
         }
 
-        /*[STAThread]
-        public static void Main()
+        [STAThread]
+        public static void Main1()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ChatClient());
-        }*/
+        }
     }
 }
