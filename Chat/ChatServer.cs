@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-class ChatServer
+class ChatClient
 {
     private static List<Socket> _clients = new List<Socket>();
     private static List<string> _usernames = new List<string>();
@@ -33,14 +33,14 @@ class ChatServer
         // Получение логина
         bytesRead = clientSocket.Receive(buffer);
         string username = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
-        /*
+        
         lock (_clients)
         {
             _clients.Add(clientSocket);
             _usernames.Add(username);
             Broadcast($"{username} вошел в чат.");
         }
-        */
+        
         // Обработка сообщений
         while (true)
         {

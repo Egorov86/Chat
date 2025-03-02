@@ -1,7 +1,8 @@
-﻿using System;
+﻿//ChatClient
+using System;
 using System.Windows.Forms;
 
-namespace ChatApp
+namespace ChatClient
 {
     public class ChatClient : Form
     {
@@ -73,12 +74,12 @@ namespace ChatApp
             Application.Exit(); // Закрываем приложение
         }
 
-        [STAThread]
-        public static void Form()
+        /*[STAThread]
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form());
-        }
+            Application.Run(new ChatClient());
+        }*/
     }
 }

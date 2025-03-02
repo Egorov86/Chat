@@ -1,6 +1,6 @@
-﻿namespace Chat
+﻿namespace ChatClient
 {
-    public class ChatApp
+    public class ChatAPP:ChatClient
     {
         /// <summary>
         /// Required designer variable.
